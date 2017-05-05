@@ -1,0 +1,18 @@
+package Hacking;
+import java.util.*;
+
+public class MainControl {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Hello agent");
+		try {
+			input.wait();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Welcome to Hacking Simulator\n\n");
+		System.out.println("Your task today is to destroy the infamous AI called Magpie");
+	}
+
+}
