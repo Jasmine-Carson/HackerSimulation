@@ -5,17 +5,17 @@ public class MainControl {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		write("Hello agent\n");
+		System.out.println("Hello agent\n");
 		pause(1000);
-		write("Welcome to Hacking Simulator\n");
+		System.out.println("Welcome to Hacking Simulator\n");
 		pause(1500);
-		write("Your task today is to destroy the infamous AI called Magpie\n");
+		System.out.println("Your task today is to destroy the infamous AI called Magpie\n");
 		pause(1000);
-		write("Do you accept this mission?");
+		System.out.println("Do you accept this mission?");
 		String userIn = input.nextLine();
 		if(userIn.equalsIgnoreCase("no")){
 			pause(1000);
-			write("We'll see you next time, agent");
+			System.out.println("We'll see you next time, agent");
 		}
 		else{
 			
@@ -32,7 +32,7 @@ public class MainControl {
 	public static void write(String str){
 		for(int i = 0; i < str.length(); i++){
 			System.out.print(str.charAt(i));
-			pause(50);
+			pause(100);
 		}
 		System.out.println();
 	}

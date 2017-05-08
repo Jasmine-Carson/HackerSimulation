@@ -1,0 +1,13 @@
+package Hacking;
+
+public class Server {
+	
+	private String username;
+	private String password;
+	
+	public Server(String user, String pass, String fileText){
+		username = user;
+		password = pass;
+	}
+	
+}
