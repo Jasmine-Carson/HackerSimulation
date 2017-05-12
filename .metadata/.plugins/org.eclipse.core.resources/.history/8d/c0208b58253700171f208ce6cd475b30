@@ -1,0 +1,13 @@
+package Hacking;
+
+public class HackProcessor {
+	
+	public HackProcessor(){}
+	
+	public void process(String command, Server serv){
+		if (command.substring(0,10).equals("sudo nmap ")){
+			serv.find(command.substring(10));
+		}
+	}
+	
+}
