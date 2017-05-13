@@ -7,6 +7,7 @@ public class Server {
 	private String username;
 	private String password;
 	private String ipAddress;
+	private int port;
 	
 	private String file;
 	
@@ -25,6 +26,7 @@ public class Server {
 		ipAddress = ip;
 		input = in;
 		proc = process;
+		port = (int) (Math.random() * 30);
 	}
 	
 	public void login(String user, String pass){
@@ -54,11 +56,12 @@ public class Server {
 			proc.process(command, this);
 		}
 	}
-	
+	public int getPort(){
+		return port;
+	}
 	public String getIp(){
 		return ipAddress;
 	}
-	
 	public boolean getFound(){
 		return found;
 	}

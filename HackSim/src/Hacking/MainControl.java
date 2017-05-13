@@ -7,12 +7,12 @@ public class MainControl {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		HackProcessor proc = new HackProcessor(input);
-		//write("Hello agent\n");
-		//pause(800);
-		//write("Welcome to Hacking Simulator\n");
-		//pause(1000);
-		//write("Your task today is to destroy the infamous AI called Magpie\n");
-		//pause(800);
+		write("Hello agent\n");
+		pause(800);
+		write("Welcome to Hacking Simulator\n");
+		pause(1000);
+		write("Your task today is to destroy the infamous AI called Magpie\n");
+		pause(800);
 		write("Do you accept this mission? Please answer yes or no");
 		String userIn = input.nextLine();
 		if(userIn.equalsIgnoreCase("no")){
