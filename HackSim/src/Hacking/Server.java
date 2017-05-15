@@ -17,6 +17,8 @@ public class Server {
 	private Scanner input;
 	private HackProcessor proc;
 	
+	boolean hacked;
+	
 	public Server(String user, String pass, String fileText, String ip, Scanner in, HackProcessor process){
 		username = user;
 		password = pass;
@@ -27,24 +29,31 @@ public class Server {
 		input = in;
 		proc = process;
 		port = (int) (Math.random() * 30);
+		hacked = false;
 	}
 	
-	public void login(String user, String pass){
-		if(user.equals(username)&&pass.equals(password)&&found){
-			access = true;
-			MainControl.write("Access granted");
-		}
-		else if(user.equals(username)&&found){
+	public void login(String user){
+		if(found){
+			if(user.equals(username)){
+				MainControl.write("Password:");
+				if(input.next().equals(password)){
+					access = true;
+					MainControl.write("Access granted");
+					return;
+				}
+				MainControl.write("Incorrect password");
+				return;
+			}
 			MainControl.write("Incorrect username");
 		}
-		else if(user.equals(username)&&found){
-			MainControl.write("Incorrect password");
-		}
-		else if (found){
-			MainControl.write("Incorrect username and password");
-		}
 	}
-	
+	public void backdoor(){
+		MainControl.write("Backdoor found");
+		MainControl.pause(600);
+		MainControl.write("Scanning for files...");
+		MainControl.pause(1200);
+		MainControl.write("File found titled \"MagpieFile\" under user admin");
+	}
 	public void find(String ip){
 		if(ipAddress.equals(ip)){
 			found = true;
@@ -55,6 +64,10 @@ public class Server {
 			String command = input.nextLine();
 			proc.process(command, this);
 		}
+	}
+	public void getFile(){
+		MainControl.write(file);
+		hacked = true;
 	}
 	public int getPort(){
 		return port;

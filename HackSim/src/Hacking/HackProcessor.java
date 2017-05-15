@@ -11,14 +11,26 @@ public class HackProcessor {
 	}
 	
 	public void process(String command, Server serv){
-		if (command.substring(0,10).equals("sudo nmap ")){
-			serv.find(command.substring(10));
-		}
-		else if(command.substring(0, 13).equals("sudo -sS -sV ")){
-			if (serv.getFound()){
-				MainControl.write("Telnet is running at port "+serv.getPort());
+		if(command.length()>10){
+			if (command.substring(0,10).equals("sudo nmap ")){
+				serv.find(command.substring(10));
+			}
+			else if(command.length()>13 && command.substring(0, 13).equals("sudo -sS -sV ")){
+				if (serv.getFound()){
+					MainControl.write("Telnet is running at port "+serv.getPort());
+				}
+			}
+			else if(command.substring(0,10).equals("telnet -l ")&&command.split(" ").length>3&&command.split(" ")[3].equals(serv.getIp())){
+				serv.login(command.split(" ")[2]);
+			}
+			else if(command.length()>16&&command.substring(0,16).equals("sudo nmap -sV -p ")){
+				String[] parts = command.split(" ");
+				if(parts.length==9&&Integer.parseInt(parts[4])==serv.getPort()&&(parts[5]+parts[6]).equals("--script ftp-vsftpd-backdoor--script-args")&&parts[7].equals("exploit.cmd=\"MagpieFile\"")&&parts[8].equals(serv.getIp())){
+					
+				}
 			}
 		}
+		
 	}
 	
 }

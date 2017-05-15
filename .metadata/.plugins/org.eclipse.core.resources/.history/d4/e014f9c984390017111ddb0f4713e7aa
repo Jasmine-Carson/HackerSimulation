@@ -1,0 +1,36 @@
+package Hacking;
+
+import java.util.Scanner;
+
+public class HackProcessor {
+	
+	Scanner input;
+	
+	public HackProcessor(Scanner in){
+		input = in;
+	}
+	
+	public void process(String command, Server serv){
+		if(command.length()>10){
+			if (command.substring(0,10).equals("sudo nmap ")){
+				serv.find(command.substring(10));
+			}
+			else if(command.length()>13 && command.substring(0, 13).equals("sudo -sS -sV ")){
+				if (serv.getFound()){
+					MainControl.write("Telnet is running at port "+serv.getPort());
+				}
+			}
+			else if(command.substring(0,10).equals("telnet -l ")&&command.split(" ").length>3&&command.split(" ")[3].equals(serv.getIp())){
+				serv.login(command.split(" ")[2]);
+			}
+			else if(command.substring(0,8).equals("nmap -p ")){
+				String[] parts = command.split(" ");
+				if (parts[1].equals(serv.getPort()+"")){
+					
+				}
+			}
+		}
+		
+	}
+	
+}

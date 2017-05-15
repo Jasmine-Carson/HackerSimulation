@@ -22,12 +22,18 @@ public class MainControl {
 		else{
 			String currIp = newIP();
 			String nextIp = newIP();
-			Server serv1 = new Server("admin", "password", nextIp, currIp, input, proc);
+			Server serv = new Server("admin", "password", "The next IP is "+nextIp+"\nUser is admin\nPassword is the minimum moves to complete the Towers of Hanoi with three rings", currIp, input, proc);
 			write("Our sources have reported that a computer is running Magpie\nat the IP address "+currIp);
-			userIn = input.nextLine();
-			proc.process(userIn, serv1);
-			userIn = input.nextLine();
-			proc.process(userIn, serv1);		
+			System.out.println();
+			pause(500);
+			write("The computer only grants access to administrators, username admin,\nand the password is believed to just be \"password\"");
+			write("Every computer on the network has a file called MagpieFile\nthat can help you get deeper into the network");
+			while(serv.hacked == false){
+				userIn = input.nextLine();
+				proc.process(userIn, serv);
+			}
+			currIp = nextIp;
+			serv = new Server("admin", "7", "", currIp, input, proc);
 		}
 	}
 	

@@ -126,33 +126,33 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_UGG20DGnEeetk-dtfNO79A" elementId="org.eclipse.ui.editorss" selectedElement="_UGHd4DGnEeetk-dtfNO79A">
-      <children xsi:type="basic:PartStack" xmi:id="_UGHd4DGnEeetk-dtfNO79A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_i0pJ0DQCEeeC2ss8BRi8RA">
+      <children xsi:type="basic:PartStack" xmi:id="_UGHd4DGnEeetk-dtfNO79A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_mDJEIDGnEeetk-dtfNO79A">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_mDJEIDGnEeetk-dtfNO79A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MainControl.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MainControl.java&quot; partName=&quot;MainControl.java&quot; title=&quot;MainControl.java&quot; tooltip=&quot;HackSim/src/Hacking/MainControl.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HackSim/src/Hacking/MainControl.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;326&quot; selectionTopPixel=&quot;251&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkMTGnEeetk-dtfNO79A" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_UGc1EDGnEeetk-dtfNO79A"/>
-        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkMjGnEeetk-dtfNO79A" elementId="org.eclipse.jdt.ui.JavadocView" toBeRendered="false" ref="_UGdcIDGnEeetk-dtfNO79A"/>
-        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkMzGnEeetk-dtfNO79A" elementId="org.eclipse.jdt.ui.SourceView" toBeRendered="false" ref="_UGeDMDGnEeetk-dtfNO79A"/>
-        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkNDGnEeetk-dtfNO79A" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_UGeqQDGnEeetk-dtfNO79A"/>
-        <children xsi:type="basic:Part" xmi:id="_i0pJ0DQCEeeC2ss8BRi8RA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Server.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Server.java&quot; partName=&quot;Server.java&quot; title=&quot;Server.java&quot; tooltip=&quot;HackSim/src/Hacking/Server.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HackSim/src/Hacking/Server.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1436&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MainControl.java&quot; partName=&quot;MainControl.java&quot; title=&quot;MainControl.java&quot; tooltip=&quot;HackSim/src/Hacking/MainControl.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HackSim/src/Hacking/MainControl.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1470&quot; selectionTopPixel=&quot;311&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
         </children>
+        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkMTGnEeetk-dtfNO79A" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_UGc1EDGnEeetk-dtfNO79A"/>
+        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkMjGnEeetk-dtfNO79A" elementId="org.eclipse.jdt.ui.JavadocView" toBeRendered="false" ref="_UGdcIDGnEeetk-dtfNO79A"/>
+        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkMzGnEeetk-dtfNO79A" elementId="org.eclipse.jdt.ui.SourceView" toBeRendered="false" ref="_UGeDMDGnEeetk-dtfNO79A"/>
+        <children xsi:type="advanced:Placeholder" xmi:id="_UHrkNDGnEeetk-dtfNO79A" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_UGeqQDGnEeetk-dtfNO79A"/>
+        <children xsi:type="basic:Part" xmi:id="_i0pJ0DQCEeeC2ss8BRi8RA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Server.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Server.java&quot; partName=&quot;Server.java&quot; title=&quot;Server.java&quot; tooltip=&quot;HackSim/src/Hacking/Server.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HackSim/src/Hacking/Server.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1614&quot; selectionTopPixel=&quot;656&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
         <children xsi:type="advanced:Placeholder" xmi:id="_UHrkNTGnEeetk-dtfNO79A" elementId="org.eclipse.ui.console.ConsoleView" ref="_UGfRUDGnEeetk-dtfNO79A"/>
         <children xsi:type="advanced:Placeholder" xmi:id="_UHrkNjGnEeetk-dtfNO79A" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_UGf4YDGnEeetk-dtfNO79A"/>
         <children xsi:type="advanced:Placeholder" xmi:id="_UHrkNzGnEeetk-dtfNO79A" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_UGf4YTGnEeetk-dtfNO79A"/>
         <children xsi:type="basic:Part" xmi:id="_L0T8YDZgEeer8dTdS5d8fw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HackProcessor.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HackProcessor.java&quot; partName=&quot;HackProcessor.java&quot; title=&quot;HackProcessor.java&quot; tooltip=&quot;HackSim/src/Hacking/HackProcessor.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HackSim/src/Hacking/HackProcessor.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;462&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HackProcessor.java&quot; partName=&quot;HackProcessor.java&quot; title=&quot;HackProcessor.java&quot; tooltip=&quot;HackSim/src/Hacking/HackProcessor.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/HackSim/src/Hacking/HackProcessor.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;6&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1069&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -306,7 +306,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_T4Yj4DGnEeetk-dtfNO79A" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qN1qcDdvEeee6cyVhrYVsw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_TFH6_DGnEeetk-dtfNO79A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_pnaasDl_EeeP8NfH7xTzjQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_TFH6_DGnEeetk-dtfNO79A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_T4ZK8DGnEeetk-dtfNO79A" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -330,7 +330,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_T4bAIDGnEeetk-dtfNO79A" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_qN1qejdvEeee6cyVhrYVsw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_TFFevzGnEeetk-dtfNO79A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_pnjkoDl_EeeP8NfH7xTzjQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_TFFevzGnEeetk-dtfNO79A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_T4bnMDGnEeetk-dtfNO79A" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2186,7 +2186,7 @@
   <addons xmi:id="_TD82UjGnEeetk-dtfNO79A" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_TD82UzGnEeetk-dtfNO79A" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_TEJqkDGnEeetk-dtfNO79A" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_oDTjoTl_EeeP8NfH7xTzjQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_TE4DUDGnEeetk-dtfNO79A" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_TE4qYDGnEeetk-dtfNO79A" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
