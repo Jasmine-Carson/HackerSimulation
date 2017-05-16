@@ -28,9 +28,7 @@ public class MainControl {
 			pause(800);
 			write("The computer only grants access to administrators, username admin,\nand the password is believed to just be \"password\"");
 			pause(600);
-			write("Every computer on the network has a file called MagpieFile\nthat can help you get deeper into the network\n");
-			pause(750);
-			write("For a list of useful commands, enter the word 'commands' without quotes");
+			write("Every computer on the network has a file called MagpieFile\nthat can help you get deeper into the network");
 			while(serv.hacked == false){
 				userIn = input.nextLine();
 				proc.process(userIn, serv);
@@ -57,16 +55,6 @@ public class MainControl {
 			pause(40);
 		}
 		System.out.println();
-	}
-	
-	public static void quickWrite(String str){
-		for(int i = 0; i < str.length(); i++){
-			System.out.print(str.charAt(i));
-			pause(20);
-		}
-		System.out.println();
-		System.out.println();
-		pause(400);
 	}
 	
 	public static String newIP(){

@@ -65,8 +65,7 @@ public class MainControl {
 			pause(20);
 		}
 		System.out.println();
-		System.out.println();
-		pause(400);
+		pause(200);
 	}
 	
 	public static String newIP(){
