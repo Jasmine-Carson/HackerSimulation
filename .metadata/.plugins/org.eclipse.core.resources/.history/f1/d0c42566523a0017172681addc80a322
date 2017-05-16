@@ -26,15 +26,13 @@ public class MainControl {
 			write("We'll see you next time, agent");
 		}
 		else{
-			if(!serv.getBypass()){
-				write("Our sources have reported that a computer is running Magpie\nat the IP address "+currIp);
-				System.out.println();
-				pause(800);
-				write("The computer only grants access to administrators, username admin,\nand the password is believed to just be \"password\"");
-				pause(600);
-				write("Every computer on the network has a file called MagpieFile\nthat can help you get deeper into the network\n");
-				pause(750);
-			}		
+			write("Our sources have reported that a computer is running Magpie\nat the IP address "+currIp);
+			System.out.println();
+			pause(800);
+			write("The computer only grants access to administrators, username admin,\nand the password is believed to just be \"password\"");
+			pause(600);
+			write("Every computer on the network has a file called MagpieFile\nthat can help you get deeper into the network\n");
+			pause(750);
 			write("For a list of useful commands, enter the word 'commands' without quotes");
 			while(serv.hacked == false){
 				userIn = input.nextLine();

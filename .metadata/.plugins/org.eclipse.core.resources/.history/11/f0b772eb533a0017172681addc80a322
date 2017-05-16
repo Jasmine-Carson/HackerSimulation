@@ -39,7 +39,7 @@ public class HackProcessor {
 			}
 			else if(command.length()>16&&command.substring(0,17).equals("sudo nmap -sV -p ")){
 				command = command.substring(17);
-				int ip = Integer.parseInt(command.substring(0, command.indexOf(" ")));
+				System.out.println("command");
 			}
 		}
 		

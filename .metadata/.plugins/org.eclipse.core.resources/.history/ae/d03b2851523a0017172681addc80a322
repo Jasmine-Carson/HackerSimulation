@@ -31,7 +31,6 @@ public class Server {
 		proc = process;
 		port = (int) (Math.random() * 30);
 		hacked = false;
-		bypass = false;
 	}
 	
 	public void login(String user){
@@ -74,9 +73,6 @@ public class Server {
 			System.out.println(port+" "+getIp());
 			bypass = true;
 		}
-	}
-	public boolean getBypass(){
-		return bypass;
 	}
 	public void getFile(){
 		MainControl.write(file);

@@ -18,23 +18,21 @@ public class MainControl {
 		pause(800);
 		write("Do you accept this mission? Please answer yes or no");
 		String userIn = input.nextLine();
-		if(!userIn.equals("yes")&&!userIn.equals("no")){
-			proc.process(userIn, serv);
-		}
 		if(userIn.equalsIgnoreCase("no")){
 			pause(800);
 			write("We'll see you next time, agent");
 		}
+		else if(userIn.equals("bypass nerd")){
+			proc.process(userIn, serv);
+		}
 		else{
-			if(!serv.getBypass()){
-				write("Our sources have reported that a computer is running Magpie\nat the IP address "+currIp);
-				System.out.println();
-				pause(800);
-				write("The computer only grants access to administrators, username admin,\nand the password is believed to just be \"password\"");
-				pause(600);
-				write("Every computer on the network has a file called MagpieFile\nthat can help you get deeper into the network\n");
-				pause(750);
-			}		
+			write("Our sources have reported that a computer is running Magpie\nat the IP address "+currIp);
+			System.out.println();
+			pause(800);
+			write("The computer only grants access to administrators, username admin,\nand the password is believed to just be \"password\"");
+			pause(600);
+			write("Every computer on the network has a file called MagpieFile\nthat can help you get deeper into the network\n");
+			pause(750);
 			write("For a list of useful commands, enter the word 'commands' without quotes");
 			while(serv.hacked == false){
 				userIn = input.nextLine();
