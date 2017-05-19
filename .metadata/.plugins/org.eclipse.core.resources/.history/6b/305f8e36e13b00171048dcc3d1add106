@@ -38,9 +38,13 @@ public class HackProcessor {
 				serv.backdoor();
 			}
 			else if(command.length()>16&&command.substring(0,17).equals("sudo nmap -sV -p ")){
-				if(command.equals("sudo nmap -sV -p "+serv.getPort()+" --script ftp-vsftpd-backdoor --script-args exploit.cmd=\"<username> / <filename>\" "+serv.getIp())){
-					serv.getFile();
-				}
+				command = command.substring(17);
+				String[] parts = command.split(" ");
+				int port = Integer.parseInt(parts[0]);
+				command = command.substring(command.indexOf(" ")+1);
+				String comm = command.substring(0,45);
+				command = command.substring(45);
+				
 			}
 		}
 		

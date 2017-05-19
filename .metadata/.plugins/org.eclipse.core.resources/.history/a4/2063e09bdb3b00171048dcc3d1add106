@@ -41,15 +41,11 @@ public class MainControl {
 				proc.process(userIn, serv);
 			}
 			currIp = nextIp;
-			serv = new Server("admin", "7", "That's the last server in the demo!", currIp, input, proc);
-			write("Congratulations!\nYou've hacked the first server and gotten a clue to the next one\nRepeat the process on the next server");
+			serv = new Server("admin", "7", "", currIp, input, proc);
 			while(serv.hacked == false){
 				userIn = input.nextLine();
 				proc.process(userIn, serv);
 			}
-			write("Good job agent, you've finished the 2-server demo\n\n");
-			pause(800);
-			write("We'll see you next time, agent");
 		}
 	}
 	
