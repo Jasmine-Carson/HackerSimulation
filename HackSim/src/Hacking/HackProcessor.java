@@ -1,13 +1,10 @@
 package Hacking;
 
-import java.util.Scanner;
-
 public class HackProcessor {
 	
-	Scanner input;
 	
-	public HackProcessor(Scanner in){
-		input = in;
+	public HackProcessor(){
+		
 	}
 	
 	public void process(String command, Server serv){
@@ -37,11 +34,12 @@ public class HackProcessor {
 			else if(command.length()>37&&command.substring(0,37).equals("nmap --script ftp-vsftpd-backdoor -p ")&&Integer.parseInt(command.substring(37))==serv.getPort()){
 				serv.backdoor();
 			}
-			else if(command.length()>16&&command.substring(0,17).equals("sudo nmap -sV -p ")){
-				if(command.equals("sudo nmap -sV -p "+serv.getPort()+" --script ftp-vsftpd-backdoor --script-args exploit.cmd=\"<username> / <filename>\" "+serv.getIp())){
+			if(command.equals("sudo nmap -sV -p "+serv.getPort()+" --script ftp-vsftpd-backdoor --script-args exploit.cmd=\"admin / MagpieFile\" "+serv.getIp())){
 					serv.getFile();
-				}
-			}
+			}	
+		}
+		if(command.equals(serv.getPass())&&serv.getFound()){
+			serv.pass(command);
 		}
 		
 	}

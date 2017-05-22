@@ -6,10 +6,10 @@ public class MainControl {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		HackProcessor proc = new HackProcessor(input);
+		HackProcessor proc = new HackProcessor();
 		String currIp = newIP();
 		String nextIp = newIP();
-		Server serv = new Server("admin", "password", "The next IP is "+nextIp+"\nUser is admin\nPassword is the minimum moves to complete the Towers of Hanoi with three rings", currIp, input, proc);
+		Server serv = new Server("admin", "password", "The next IP is "+nextIp+"\nUser is admin\nPassword is the minimum moves to complete the Towers of Hanoi with three rings", currIp, proc);
 		write("Hello agent\n");
 		pause(800);
 		write("Welcome to Hacking Simulator\n");
@@ -41,8 +41,8 @@ public class MainControl {
 				proc.process(userIn, serv);
 			}
 			currIp = nextIp;
-			serv = new Server("admin", "7", "That's the last server in the demo!", currIp, input, proc);
-			write("Congratulations!\nYou've hacked the first server and gotten a clue to the next one\nRepeat the process on the next server");
+			serv = new Server("admin", "7", "That's the last server in the demo!", currIp, proc);
+			write("\n\nCongratulations!\nYou've hacked the first server and gotten a clue to the next one\nRepeat the process on the next server");
 			while(serv.hacked == false){
 				userIn = input.nextLine();
 				proc.process(userIn, serv);

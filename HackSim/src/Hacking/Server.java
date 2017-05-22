@@ -1,7 +1,5 @@
 package Hacking;
 
-import java.util.Scanner;
-
 public class Server {
 	
 	private String username;
@@ -14,20 +12,18 @@ public class Server {
 	private boolean access;
 	private boolean found;
 	
-	private Scanner input;
 	private HackProcessor proc;
 	
 	boolean hacked;
 	boolean bypass;
 	
-	public Server(String user, String pass, String fileText, String ip, Scanner in, HackProcessor process){
+	public Server(String user, String pass, String fileText, String ip, HackProcessor process){
 		username = user;
 		password = pass;
 		file = fileText;
 		access = false;
 		found = false;
 		ipAddress = ip;
-		input = in;
 		proc = process;
 		port = (int) (Math.random() * 30);
 		hacked = false;
@@ -38,16 +34,19 @@ public class Server {
 		if(found){
 			if(user.equals(username)){
 				MainControl.write("Password:");
-				if(input.next().equals(password)){
-					access = true;
-					MainControl.write("Access granted");
-					return;
-				}
-				MainControl.write("Incorrect password");
 				return;
 			}
 			MainControl.write("Incorrect username");
 		}
+	}
+	public void pass(String pass){
+		if(pass.equals(password)){
+			access = true;
+			MainControl.write("Access granted");
+			return;
+		}
+		MainControl.write("Incorrect password");
+		return;
 	}
 	public void backdoor(){
 		MainControl.write("Backdoor found");
@@ -63,8 +62,6 @@ public class Server {
 		}
 		else{
 			MainControl.write("Server not found, reenter command and IP");
-			String command = input.nextLine();
-			proc.process(command, this);
 		}
 	}
 	public void bypass(String pass){
@@ -80,6 +77,7 @@ public class Server {
 	}
 	public void getFile(){
 		MainControl.write(file);
+		MainControl.pause(1000);
 		hacked = true;
 	}
 	public int getPort(){
@@ -90,6 +88,9 @@ public class Server {
 	}
 	public boolean getFound(){
 		return found;
+	}
+	public String getPass(){
+		return password;
 	}
 	
 }
